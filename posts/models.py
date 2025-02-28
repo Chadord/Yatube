@@ -20,5 +20,5 @@ class Post(models.Model):
     group = models.ForeignKey(Group, on_delete=models.SET_NULL, blank=True, null=True)
 
     def __str__(self):
-        return f'{self.text[:50]}...'  # Повертає назву групи
+        return self.text
 
